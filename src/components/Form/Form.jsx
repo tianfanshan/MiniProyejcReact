@@ -1,5 +1,6 @@
 import React from 'react'
 import {useState} from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const Form = () => {
     let newsData = JSON.parse(localStorage.getItem('news')) || []
@@ -7,6 +8,9 @@ const Form = () => {
         newsData.push(data)
         localStorage.setItem('news',JSON.stringify(newsData))
     }
+    const navegator = useNavigate()
+    const [disable,setDisable] = useState(true)
+    const [message,setMessage] = useState('')
 
     const date = new Date()
 
@@ -24,16 +28,29 @@ const Form = () => {
     }
 
     const handleInputChange =(event)=>{
+        if(data.name.length < 3){
+            setMessage('Los caraces del nombre minimo tiene que ser 4')
+            setDisable(true)
+        }else{
+            setMessage(null)
+            setDisable(false)
+        }
         setData({
             ...data,
             [event.target.name]:event.target.value
         })
     }
 
+
+
     const handleSubmit=(e)=>{
         e.preventDefault()
         getData()
         clearData()
+        setMessage('Te llevamos a la pagina home')
+        setTimeout(()=>{
+            navegator('/')
+        },3000)
     }
 
   return (
@@ -65,8 +82,9 @@ const Form = () => {
             value={data.news}
             onChange={handleInputChange}
             />
-            <input type="submit" />
+            <input type="submit" disabled={disable}/>
         </form>
+        <p>{message}</p>
     </div>
   )
 }
