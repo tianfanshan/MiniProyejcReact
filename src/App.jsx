@@ -1,22 +1,21 @@
 import './App.css';
-import Footer from './components/Footer/Footer'
 import Form from './components/Form/Form'
 import Header from './components/Header/Header'
 import Home from './components/Home/Home'
 import ListNews from './components/ListNews/ListNews'
-import {BrowserRoute,Router,Route} from 'react-router-dom'
+import {BrowserRouter,Route,Routes} from 'react-router-dom'
 
 function App() {
   return (
     <div className="App">
-      <BrowserRoute>
-      
-      <Footer/>
-      <Form/>
+      <BrowserRouter>
       <Header/>
-      <Home/>
-      <ListNews/>
-      </BrowserRoute>
+      <Routes>
+      <Route path='/form' element={<Form/>}/>
+      <Route path='/' element={<Home/>}/>
+      <Route path='/list' element={<ListNews/>}/>
+      </Routes>
+      </BrowserRouter>
     </div>
   );
 }
