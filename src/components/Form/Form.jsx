@@ -47,9 +47,9 @@ const Form = () => {
         e.preventDefault()
         getData()
         clearData()
-        setMessage('Te llevamos a la pagina home')
+        setMessage('Te llevamos a la pagina de News')
         setTimeout(()=>{
-            navegator('/')
+            navegator('/list')
         },3000)
     }
 

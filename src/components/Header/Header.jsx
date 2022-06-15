@@ -13,7 +13,7 @@ const Header = () => {
         <Link to='/form'>Form</Link>
       </span>
       <span>
-        <Link to='/list'>List</Link>
+        <Link to='/listNews'>ListNews</Link>
       </span>
     </div>
     </nav>
