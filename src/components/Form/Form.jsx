@@ -49,7 +49,7 @@ const Form = () => {
         clearData()
         setMessage('Te llevamos a la pagina de News')
         setTimeout(()=>{
-            navegator('/list')
+            navegator('/ListNews')
         },3000)
     }
 
