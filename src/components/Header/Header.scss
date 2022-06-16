@@ -1,1 +1,43 @@
-@import '../../primary.scss'
+@import '../../primary.scss';
+
+.header-div{
+    background-color: $primary-color;
+    height: 5rem;
+    text-align: center;
+    .Home{
+        font-family: $primary-font-family;
+        margin: 2rem 0;
+        position: absolute;
+        left:1rem;
+        .home{
+            font-size: 2rem;
+            text-decoration: none;
+            color: $second-color;
+        }
+    }
+    .Contact{
+        font-family: $primary-font-family;
+        margin: 2rem 2rem;
+        font-size: 2rem;
+        position: absolute;
+        right: 0;
+        .contact{
+            font-size: 2rem;
+            text-decoration: none;
+            color: $second-color;
+        }
+    }
+    .ListNews{
+        font-family: $primary-font-family;
+        font-size: 2rem;
+        position: relative;
+        top: 2rem;
+        .listnews{
+            font-size: 2rem;
+            text-decoration: none;
+            color: $second-color;
+        }
+    }
+}
+
+

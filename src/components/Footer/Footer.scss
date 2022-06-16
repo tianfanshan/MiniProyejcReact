@@ -1,1 +1,15 @@
-@import '../../primary.scss'
+@import '../../primary.scss';
+
+.footer-div{
+    background-color: $primary-color;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    a{
+        text-decoration: none;
+        margin: 3rem 3rem;
+        font-size: 1.5rem;
+        color: $second-color;
+        font-family: $primary-font-family;
+    }
+}

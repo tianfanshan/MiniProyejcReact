@@ -3,8 +3,7 @@ import News from '../News/News'
 
 const ListNews = () => {
   return (
-    <div>ListNews
-      
+    <div>
       <News/>
     </div>
   )

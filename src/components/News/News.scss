@@ -1,2 +1,17 @@
-@import '../../primary.scss'
+@import '../../primary.scss';
 
+.news-div{
+    background-color: $primary-color;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 4rem;
+    .news-title{
+        font-size: 2rem;
+        color: $second-color;
+        font-family: $primary-font-family;
+    }
+    .news-image{
+        border: solid 5px black;
+        border-radius: 10px;
+    }
+}

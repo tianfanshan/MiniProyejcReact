@@ -1,6 +1,7 @@
 import React from 'react'
 import {useState} from 'react'
 import { useNavigate } from 'react-router-dom'
+import './Form.scss'
 
 const Form = () => {
     let newsData = JSON.parse(localStorage.getItem('news')) || []
@@ -54,26 +55,26 @@ const Form = () => {
     }
 
   return (
-    <div>
+    <div className='form-div'>
         <form onSubmit={handleSubmit}>
-            <label htmlFor="">Tu nombre</label>
+            <label htmlFor="">Tu nombre</label><br />
             <input 
             type="text" 
             placeholder='Tu nombre'
             name='name'
             value={data.name}
             onChange={handleInputChange}
-            />
-            <br />
-            <label htmlFor="">Tu correo</label>
+            className='input'
+            /><br />
+            <label htmlFor="">Tu correo</label><br />
             <input 
             type="email" 
             placeholder='Tu correo'
             name='email'
             value={data.email}
             onChange={handleInputChange}
-            />
-            <br />
+            className='input'
+            /><br />
             <label htmlFor="">Textea nueva noticia</label><br />
             <textarea 
             cols="30" rows="10"
@@ -81,8 +82,10 @@ const Form = () => {
             name="news"
             value={data.news}
             onChange={handleInputChange}
+            className='input'
             />
-            <input type="submit" disabled={disable}/>
+            <br />
+            <input type="submit" disabled={disable} className='input'/>
         </form>
         <p>{message}</p>
     </div>

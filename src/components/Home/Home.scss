@@ -1,1 +1,34 @@
-@import '../../primary.scss'
+@import '../../primary.scss';
+
+.home-div{
+    background-color: $primary-color;
+    height: 50rem;
+    text-align: center;
+    width: auto;
+}
+
+.brand{
+    width: 50%;
+    padding: 5rem 0;
+    padding-left: 2rem;
+    color:$third-color;
+    font-size: 10rem;
+    font-family:$second-font-family ;
+}
+
+.news{
+    position: absolute;
+    right: 2rem;
+    top: 8rem;
+    .noticia{
+        font-size: 1.5rem;
+        font-family: $primary-font-family;
+        color:$second-color;
+    }
+    .home-img{
+        height: 30rem;
+        color: $third-color;
+        border: solid 5px;
+        border-radius: 10px;
+    }
+}
