@@ -2,6 +2,7 @@
 
 .home-div{
     background-color: $primary-color;
+    // background-image: url(../../../public/assets/pexels-cottonbro-5803614.jpg);
     height: 50rem;
     text-align: center;
     width: auto;
@@ -10,9 +11,9 @@
 .brand{
     width: 50%;
     padding: 5rem 0;
-    padding-left: 2rem;
-    color:$third-color;
-    font-size: 10rem;
+    padding-left: 5rem;
+    color:$second-color;
+    font-size: 15rem;
     font-family:$second-font-family ;
 }
 
@@ -23,12 +24,14 @@
     .noticia{
         font-size: 1.5rem;
         font-family: $primary-font-family;
+        background-color: $third-color;
         color:$second-color;
+        border: solid 3px $second-color;
+        padding: 10px 20px 0;
     }
     .home-img{
         height: 30rem;
         color: $third-color;
-        border: solid 5px;
-        border-radius: 10px;
+        border: solid 4px $second-color;
     }
 }

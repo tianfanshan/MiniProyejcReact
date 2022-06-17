@@ -1,5 +1,6 @@
 import React from 'react'
 import './Home.scss'
+import { useEffect } from 'react'
 
 const Home = () => {
   return (
@@ -7,7 +8,7 @@ const Home = () => {
       <h1 className='brand'>NEWS</h1>
       <div className='news'>
         <p className='noticia'>Noticia!!!Noticia!!!</p>
-        <img src="https://m.media-amazon.com/images/I/41NYpBcHT6L._AC_SY1000_.jpg" alt="una foto de la noticia" className='home-img'/>
+        <img src="https://picsum.photos/200/300" alt="una foto de la noticia" className='home-img'/>
       </div>
     </div>
   )
