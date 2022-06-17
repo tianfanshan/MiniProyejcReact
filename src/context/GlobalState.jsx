@@ -19,7 +19,12 @@ export const GlobalProvider = ({children})=>{
         })
     }
     return(
-        <GlobalContext.Provider value={{news:state.news,getNews,}}>
+        <GlobalContext.Provider 
+        value={{
+            news:state.news,
+            getNews,
+            }}
+            >
             {children}
         </GlobalContext.Provider>
     )
