@@ -4,7 +4,7 @@ import News from '../News/News'
 const ListNews = () => {
   return (
     <div>
-      <News/>
+      <News />
     </div>
   )
 }
